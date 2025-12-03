@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Organify - Fresh Organic Food Store" />
+    <meta
+      name="keywords"
+      content="organic, food, vegetables, fruits, healthy"
+    />
+    <title>Organify - Fresh Organic Food</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="hero-categories">
+              <div class="hero-categories-all">
+                <i class="fa fa-bars"></i>
+                <span>All Categories</span>
+              </div>
+              <ul>
+                <li>
+                  <a href="category.html?cat=vegetables">Fresh Vegetables</a>
+                </li>
+                <li><a href="category.html?cat=fruits">Fresh Fruits</a></li>
+                <li><a href="category.html?cat=meat">Fresh Meat</a></li>
+                <li><a href="category.html?cat=seafood">Dried & Seafood</a></li>
+                <li><a href="category.html?cat=beverage">Beverage</a></li>
+                <li><a href="category.html?cat=organic">Organic Food</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="hero-slider" id="heroSlider">
+              <div
+                class="hero-item active"
+                style="
+                  background-image: url('assets/images/banner/Organic Food banner_files/home-1-1.jpg');
+                "
+              >
+                <div class="hero-text">
+                  <span>FRUIT FRESH</span>
+                  <h2>Vegetable<br />100% Organic</h2>
+                  <p>Free Pickup and Delivery Available</p>
+                  <a href="shop.html" class="primary-btn">SHOP NOW</a>
+                </div>
+              </div>
+              <div
+                class="hero-item"
+                style="
+                  background-image: url('assets/images/banner/Organic Food banner_files/home-2.jpg');
+                "
+              >
+                <div class="hero-text">
+                  <span>FRESH FRUITS</span>
+                  <h2>Nature's Best<br />Organic Fruits</h2>
+                  <p>Premium Quality Fresh Fruits</p>
+                  <a href="shop.html" class="primary-btn">SHOP NOW</a>
+                </div>
+              </div>
+              <div
+                class="hero-item"
+                style="
+                  background-image: url('assets/images/banner/Organic Food banner_files/home-3.jpg');
+                "
+              >
+                <div class="hero-text">
+                  <span>HEALTHY FOOD</span>
+                  <h2>Farm Fresh<br />Organic Products</h2>
+                  <p>Delivered Fresh to Your Door</p>
+                  <a href="shop.html" class="primary-btn">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Featured Categories</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="categories-list">
+          <!-- Categories will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Featured Products</h2>
+            </div>
+            <div class="featured-controls">
+              <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter="vegetables">Vegetables</li>
+                <li data-filter="fruits">Fruits</li>
+                <li data-filter="meat">Meat</li>
+                <li data-filter="seafood">Seafood</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="featured-products-list">
+          <!-- Products will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div
+              class="banner-item"
+              style="
+                background-image: url('assets/images/banner/Organic Food banner_files/home-4.jpg');
+              "
+            >
+              <div class="banner-text">
+                <span>Fresh Fruit</span>
+                <h2>Vegetable<br />100% Organic</h2>
+                <a href="shop.html">Shop now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div
+              class="banner-item"
+              style="
+                background-image: url('assets/images/banner/Organic Food banner_files/home-5.jpg');
+              "
+            >
+              <div class="banner-text">
+                <span>Fresh Meat</span>
+                <h2>Meat & Seafood<br />100% Fresh</h2>
+                <a href="shop.html">Shop now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Products Section -->
+    <section class="latest-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Latest Products</h2>
+            </div>
+            <div class="latest-controls">
+              <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter="vegetables">Vegetables</li>
+                <li data-filter="fruits">Fruits</li>
+                <li data-filter="meat">Meat</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="latest-products-list">
+          <!-- Products will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>From The Blog</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+              <div class="blog-pic">
+                <img
+                  src="assets/images/banner/Organic Food banner_files/Footer-1-313x313.jpg"
+                  alt="Cooking tips"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="blog-text">
+                <ul>
+                  <li><i class="fa fa-calendar"></i> May 4, 2024</li>
+                  <li><i class="fa fa-comment"></i> 5</li>
+                </ul>
+                <h5>
+                  <a href="blog-single.html"
+                    >Cooking tips make cooking simple</a
+                  >
+                </h5>
+                <p>
+                  Discover the secrets to making your meals delicious and
+                  nutritious...
+                </p>
+                <a href="blog-single.html" class="read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+              <div class="blog-pic">
+                <img
+                  src="assets/images/banner/Organic Food banner_files/Footer-2-313x313.jpg"
+                  alt="Breakfast ideas"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="blog-text">
+                <ul>
+                  <li><i class="fa fa-calendar"></i> May 2, 2024</li>
+                  <li><i class="fa fa-comment"></i> 8</li>
+                </ul>
+                <h5>
+                  <a href="blog-single.html">6 ways to prepare breakfast</a>
+                </h5>
+                <p>
+                  Start your day right with these amazing breakfast ideas...
+                </p>
+                <a href="blog-single.html" class="read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+              <div class="blog-pic">
+                <img
+                  src="assets/images/banner/Organic Food banner_files/Footer-3-313x313.jpg"
+                  alt="Clean farm"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="blog-text">
+                <ul>
+                  <li><i class="fa fa-calendar"></i> April 30, 2024</li>
+                  <li><i class="fa fa-comment"></i> 12</li>
+                </ul>
+                <h5>
+                  <a href="blog-single.html">Visit the clean farm in the US</a>
+                </h5>
+                <p>
+                  Take a tour of our partner farms and see where your food comes
+                  from...
+                </p>
+                <a href="blog-single.html" class="read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+
+    <!-- jQuery (for component loading) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/utils.js" defer></script>
+    <script src="assets/js/products.js" defer></script>
+    <script src="assets/js/cart.js" defer></script>
+    <script src="assets/js/slider.js" defer></script>
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+/* ==========================================
+   RESPONSIVE STYLES - Organify
+   ========================================== */
+
+/* Tablet & Small Desktop */
+@media only screen and (max-width: 991px) {
+  /* Header */
+  .header-top-left ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .canvas-open {
+    display: block;
+  }
+
+  .header-bottom .all-categories {
+    display: none;
+  }
+
+  .search-form {
+    margin-top: var(--spacing-md);
+  }
+
+  /* Hero */
+  .hero-categories {
+    display: none;
+  }
+
+  .hero-slider {
+    height: 350px;
+  }
+
+  .hero-text h2 {
+    font-size: 36px;
+  }
+
+  /* Footer */
+  .footer-widget {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .footer-payment {
+    text-align: left;
+    margin-top: var(--spacing-md);
+  }
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  /* Typography */
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+
+  /* Header */
+  .header-top {
+    display: none;
+  }
+
+  .header-middle {
+    padding: 15px 0;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .header-cart {
+    justify-content: center;
+  }
+
+  .header-bottom {
+    padding: var(--spacing-sm) 0;
+  }
+
+  .header-phone {
+    justify-content: center;
+    margin-top: var(--spacing-md);
+  }
+
+  /* Hero */
+  .hero {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero-slider {
+    height: 300px;
+    padding: var(--spacing-lg);
+  }
+
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  /* Products */
+  .product-item {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .featured-controls ul,
+  .latest-controls ul {
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+  }
+
+  /* Sections */
+  .categories,
+  .featured-products,
+  .latest-products,
+  .blog-section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  /* Banner */
+  .banner-item {
+    height: 200px;
+    padding: var(--spacing-lg);
+  }
+
+  .banner-text h2 {
+    font-size: 24px;
+  }
+
+  /* Shop */
+  .shop-sidebar {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .shop-toolbar {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .shop-showing,
+  .shop-ordering {
+    text-align: center;
+  }
+
+  /* Cart */
+  .cart-table {
+    overflow-x: auto;
+  }
+
+  .cart-table table {
+    min-width: 600px;
+  }
+
+  /* Checkout */
+  .order-summary {
+    margin-top: var(--spacing-xl);
+  }
+
+  /* Blog */
+  .blog-sidebar {
+    margin-top: var(--spacing-xl);
+  }
+
+  /* Footer */
+  .footer-top {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .footer-widget {
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+/* Extra Small Devices */
+@media only screen and (max-width: 575px) {
+  /* Container */
+  .container {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+
+  /* Buttons */
+  .primary-btn,
+  .site-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  /* Hero */
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  /* Product */
+  .product-pic img {
+    height: 200px;
+  }
+
+  /* Banner */
+  .banner-item {
+    height: 180px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .banner-text h2 {
+    font-size: 20px;
+  }
+
+  /* Search Form */
+  .search-form select {
+    display: none;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb-text h2 {
+    font-size: 24px;
+  }
+
+  .breadcrumb-option {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+}
+
+/* Landscape Mode */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .hero-slider {
+    height: 250px;
+  }
+
+  .banner-item {
+    height: 150px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .footer,
+  .breadcrumb-section,
+  .shop-sidebar,
+  .blog-sidebar {
+    display: none;
+  }
+
+  body {
+    color: #000;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
