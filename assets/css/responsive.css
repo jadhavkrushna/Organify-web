@@ -39,6 +39,25 @@
     font-size: 36px;
   }
 
+  /* Checkout Tablet Styles */
+  .checkout-section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .order-summary {
+    margin-top: var(--spacing-xl);
+    position: static;
+  }
+
+  .checkout-title {
+    font-size: 20px;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .coupon-notice {
+    padding: var(--spacing-lg);
+  }
+
   /* Footer */
   .footer-widget {
     margin-bottom: var(--spacing-xl);
@@ -171,6 +190,29 @@
   /* Checkout */
   .order-summary {
     margin-top: var(--spacing-xl);
+    position: static;
+  }
+
+  .checkout-form .row {
+    margin: 0;
+  }
+
+  .checkout-form .col-lg-6,
+  .checkout-form .col-lg-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .coupon-notice {
+    text-align: center;
+  }
+
+  #coupon-form form {
+    flex-direction: column;
+  }
+
+  .payment-option label {
+    font-size: 14px;
   }
 
   /* Blog */
@@ -246,6 +288,43 @@
     flex-wrap: wrap;
     font-size: 12px;
   }
+
+  /* Checkout Mobile Improvements */
+  .checkout-section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .checkout-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .order-summary {
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+  }
+
+  .order-products h6 {
+    font-size: 14px;
+  }
+
+  .order-totals .total {
+    font-size: var(--font-size-base);
+  }
+
+  .coupon-notice {
+    padding: var(--spacing-md);
+    text-align: left;
+  }
+
+  .coupon-notice p {
+    font-size: 13px;
+  }
+
+  .place-order {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-base);
+  }
 }
 
 /* Landscape Mode */
@@ -256,6 +335,51 @@
 
   .banner-item {
     height: 150px;
+  }
+
+  /* Checkout Landscape Adjustments */
+  .checkout-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .order-summary {
+    padding: var(--spacing-md);
+  }
+}
+
+/* Ultra Small Devices */
+@media only screen and (max-width: 480px) {
+  .checkout-form input,
+  .checkout-form select {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .order-summary {
+    padding: var(--spacing-md);
+  }
+
+  .order-products li,
+  .order-totals li {
+    font-size: 13px;
+  }
+
+  .payment-option label {
+    padding: var(--spacing-sm);
+    font-size: 13px;
+  }
+
+  .place-order {
+    font-size: 14px;
+    padding: var(--spacing-md);
+  }
+
+  .coupon-notice {
+    padding: var(--spacing-sm);
+  }
+
+  .coupon-notice p {
+    font-size: 12px;
   }
 }
 
